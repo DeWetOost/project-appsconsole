@@ -32,33 +32,6 @@ namespace TEST
             {
                 Console.WriteLine("\nPlease ensure to select either Y or N");
             }
-
-            // Ask user random question from a list of 3 questions
-            var questions = new List<Question>()
-            {
-                new Question { Text = "What is the capital of France?", Answer = "Paris" };
-                new Question { Text = "What is the largest mammal?", Answer = "Blue whale" };
-                new Question { Text = "Who is the current UK Prime Minister?", Answer = "Boris Johnson" };
-            }
-            Random random = new Random();
-
-            foreach (var question in questions.OrderBy(q => random.Next()))
-            {
-                Console.WriteLine(question.Text);
-
-                do
-                {
-                    var answer = Console.ReadLine();
-                    if (question.IsCorrect(answer))
-                    {
-                        Console.WriteLine("It's True");
-                        break;
-                    }
-
-                Console.WriteLine("It's False. Please try again.");
-                }
-            while (true);
-            }
         }     
     }
 }
