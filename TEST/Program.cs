@@ -4,6 +4,38 @@ namespace TEST
 {
     class Program
     {
+        static void RandomQuestion()
+        {
+             next:
+                Random question = new Random();
+                int x = question.Next(3);
+                string[] array = new string[3];
+                array[0] = "-What is the capital of France";
+                array[1] = "-What is the capital of Spain";
+                array[2] = "-What is the captial of Russia";
+
+                Console.WriteLine(array[x]);
+
+                string[] answer = new string[3];
+                answer[0] = "Paris";
+                answer[1] = "Madrid";
+                answer[2] = "Moscow";
+
+                string a = Console.ReadLine();
+
+                if (a == answer[x])
+                {
+                    Console.WriteLine("It's True \n*Next Question is:");
+                    goto next;
+                }
+                else
+                {
+                    Console.WriteLine("It's False \n*Please Try Again.");
+
+                    Console.ReadLine();
+                }
+        }
+
         static void Main(string[] args)
         {
             // Ask user for their name
@@ -34,10 +66,7 @@ namespace TEST
             }
 
             // Random question to give user
-            Random generator = new Random();
-            double randomNumber = generator.NextDouble();
-            double roundedNumber = Math.Round(randomNumber, 1);
-            Console.WriteLine(roundedNumber);
+            RandomQuestion();
         }     
     }
 }
