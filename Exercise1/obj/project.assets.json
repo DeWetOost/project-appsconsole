@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\dewet\\Documents\\Course21\\Projects\\console-apps\\TEST\\TEST.csproj",
-      "projectName": "TEST",
-      "projectPath": "C:\\Users\\dewet\\Documents\\Course21\\Projects\\console-apps\\TEST\\TEST.csproj",
+      "projectUniqueName": "C:\\Users\\dewet\\Documents\\Course21\\Projects\\console-apps\\Exercise1\\Exercise1.csproj",
+      "projectName": "Exercise1",
+      "projectPath": "C:\\Users\\dewet\\Documents\\Course21\\Projects\\console-apps\\Exercise1\\Exercise1.csproj",
       "packagesPath": "C:\\Users\\dewet\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\dewet\\Documents\\Course21\\Projects\\console-apps\\TEST\\obj\\",
+      "outputPath": "C:\\Users\\dewet\\Documents\\Course21\\Projects\\console-apps\\Exercise1\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\dewet\\AppData\\Roaming\\NuGet\\NuGet.Config"
