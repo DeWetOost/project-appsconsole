@@ -6,31 +6,29 @@ namespace TEST
     {
         static void RandomQuestion()
         {
-             next:
                 Random question = new Random();
                 int x = question.Next(3);
                 string[] array = new string[3];
-                array[0] = "-What is the capital of France";
-                array[1] = "-What is the capital of Spain";
-                array[2] = "-What is the captial of Russia";
+                array[0] = "-What is the capital of France?";
+                array[1] = "-What is the largest mammal?";
+                array[2] = "-Who is the current Prime Minister of the UK?";
 
                 Console.WriteLine(array[x]);
 
                 string[] answer = new string[3];
                 answer[0] = "Paris";
-                answer[1] = "Madrid";
-                answer[2] = "Moscow";
+                answer[1] = "Blue whale";
+                answer[2] = "Boris Johnson";
 
                 string a = Console.ReadLine();
 
                 if (a == answer[x])
                 {
-                    Console.WriteLine("It's True \n*Next Question is:");
-                    goto next;
+                    Console.WriteLine("Well done! You have passed the test");
                 }
                 else
                 {
-                    Console.WriteLine("It's False \n*Please Try Again.");
+                    Console.WriteLine("That is not entirely correct \n*Please Try Again.");
 
                     Console.ReadLine();
                 }
