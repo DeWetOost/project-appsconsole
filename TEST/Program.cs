@@ -9,9 +9,9 @@ namespace TEST
                 Random question = new Random();
                 int x = question.Next(3);
                 string[] array = new string[3];
-                array[0] = "-What is the capital of France?";
-                array[1] = "-What is the largest mammal?";
-                array[2] = "-Who is the current Prime Minister of the UK?";
+                array[0] = "What is the capital of France?";
+                array[1] = "What is the largest mammal?";
+                array[2] = "Who is the current Prime Minister of the UK?";
 
                 Console.WriteLine(array[x]);
 
@@ -20,17 +20,19 @@ namespace TEST
                 answer[1] = "Blue whale";
                 answer[2] = "Boris Johnson";
 
-                string a = Console.ReadLine();
-
-                if (a == answer[x])
+                bool incorrect = true;
+                while(incorrect)
                 {
-                    Console.WriteLine("Well done! You have passed the test");
-                }
-                else
-                {
-                    Console.WriteLine("That is not entirely correct \n*Please Try Again.");
-
-                    Console.ReadLine();
+                    string a = Console.ReadLine();
+                    if (a == answer[x])
+                    {
+                        Console.WriteLine("Well done! You have passed the test");
+                        incorrect = false;
+                    }
+                    else
+                    {
+                        Console.WriteLine("That is not entirely correct \n*Please Try Again.");
+                    }
                 }
         }
 
